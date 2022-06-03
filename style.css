@@ -1,0 +1,65 @@
+h1{
+    font-style: italic;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 2.5fr 1fr;
+    grid-template-rows: 5fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav main sidebar "
+      "content1 content2 content2"
+       "content1 content3 content3"
+       "content1 content4 content4"
+       "content1 content5 content5"
+       "content1 content6 content6";
+    border: 1px black solid;
+     
+}
+nav{
+    grid-area: nav;
+    border: 1px black solid;
+}
+main{
+    grid-area: main;
+    border: 1px black solid;
+}
+#sidebar{
+    grid-area: sidebar;
+    border: 1px black solid;
+}
+#content1{
+    grid-area: content1;
+    border: 1px black solid;
+}
+#content2{
+    grid-area: content2;
+    background-color: yellow;
+
+}
+#content3{
+    grid-area: content3;
+    background-color: rgb(99, 99, 230);
+}
+#content4{
+    grid-area: content4;
+    background-color: rgb(0, 153, 255);
+}
+#content5{
+    grid-area: content5;
+    background-color: rgb(73, 128, 0);
+}
+#content6{
+    grid-area: content6;
+    background-color: purple;
+}
+main img{
+    height: 400px;
+    width:700px;
+    align-items: center;
+    display: center;
+    margin-left: 5mm;
+    margin-right: 5mm;
+}
